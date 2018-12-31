@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Recipe Details - Task 2.2</string>
+    <string name="image_for_the_chicken">Image for the chicken</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="ingredientsdescp">ingredientsdecp</string>
+    <string name="preparation">PREPARATION</string>
+    <string name="preparationdescription">preparationdescription</string>
+    <string name="the_name_of_the_chicken">the name of the chicken</string>
+    <string name="thai_lemongrass_chicken">Thai Lemongrass Chicken</string>
+    <string name="under_this_are_the_images_of_the_boys">under this are the images of the boys</string>
+    <string name="serves">SERVES:</string>
+    <string name="put_the_rating_image_under_this">put the rating image under this</string>
+    <string name="ratings">RATINGS:</string>
+    <string name="level_of_diff_under_this">level of diff under this</string>
+    <string name="difficulty_level">DIFFICULTY LEVEL</string>
+    <string name="details_of_the_chicken_man">Details of the chicken man</string>
+    <string name="recipe_by_allrecipes_november_2017">RECIPE BY ALLRECIPES | NOVEMBER 2017</string>
+    <string name="time_taken_to_cook_recipe">Time taken to cook recipe</string>
+    <string name="_45_mins">45 MINS</string>
+    <string name="moderate">Moderate</string>
+    <string name="description_of_image">description of image</string>
+    <string name="an_image_of_a_clock">an image of a clock</string>
+    <string name="description">description</string>
+    <string name="description_of_something">description of something</string>
+    <string name="description_is_a_lot_of_typing">description is a lot of typing</string>
+    <string name="okay_description">okay description</string>
+    <string name="heart_beat_image">Heart beat image</string>
+    <string name="calories_in_the_recipe">calories in the recipe</string>
+    <string name="_160_cal">160 cal</string>
+    <string name="description_for_image">description for image</string>
+    <string name="this_is_description">this is description</string>
+
+</resources>

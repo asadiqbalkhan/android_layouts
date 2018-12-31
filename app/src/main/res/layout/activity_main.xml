@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/chicken_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_for_the_chicken"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/chicken_img_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_overview"
+        app:srcCompat="@drawable/lemon_grass_chicken" />
+<!---->
+    <TextView
+        android:id="@+id/top_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/top_ingr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ingredientsdescp"
+        android:text="@string/ingredients"
+        app:layout_constraintBottom_toTopOf="@+id/chicken_img"
+        app:layout_constraintEnd_toStartOf="@+id/top_prep"
+        app:layout_constraintStart_toEndOf="@+id/top_overview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/top_prep"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/preparationdescription"
+        android:text="@string/preparation"
+        app:layout_constraintBottom_toTopOf="@+id/chicken_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chicken_img_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="96dp"
+        android:contentDescription="@string/the_name_of_the_chicken"
+        android:text="@string/thai_lemongrass_chicken"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chicken_img_recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chicken_img" />
+
+    <TextView
+        android:id="@+id/chicken_img_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/details_of_the_chicken_man"
+        android:text="@string/recipe_by_allrecipes_november_2017"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/chicken_img_desc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="384dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chicken_img_recipe" />
+
+    <TextView
+        android:id="@+id/id_serves"
+        android:layout_width="45dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/under_this_are_the_images_of_the_boys"
+        android:text="@string/serves"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/id_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/put_the_rating_image_under_this"
+        android:text="@string/ratings"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/id_diff_level"
+        app:layout_constraintStart_toEndOf="@+id/id_serves"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/id_diff_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/level_of_diff_under_this"
+        android:text="@string/difficulty_level"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/id_server_1"
+        android:layout_width="15dp"
+        android:layout_height="37dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/this_is_description"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/id_server_2"
+        app:layout_constraintTop_toBottomOf="@+id/id_serves"
+        app:srcCompat="@drawable/man_icon" />
+
+    <ImageView
+        android:id="@+id/id_server_2"
+        android:layout_width="15dp"
+        android:layout_height="37dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_for_image"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/id_server_1"
+        app:layout_constraintStart_toEndOf="@+id/id_server_"
+        app:layout_constraintTop_toBottomOf="@+id/id_serves"
+        app:srcCompat="@drawable/man_icon" />
+
+    <ImageView
+        android:id="@+id/id_server_"
+        android:layout_width="15dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="17dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_of_image"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_serves"
+        app:srcCompat="@drawable/man_icon" />
+
+    <ImageView
+        android:id="@+id/id_imgclock"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/an_image_of_a_clock"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_server_2"
+        app:srcCompat="@drawable/timer5" />
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="57dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/time_taken_to_cook_recipe"
+        android:text="@string/_45_mins"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_imgclock"
+        app:layout_constraintTop_toBottomOf="@+id/id_server_2" />
+
+    <ImageView
+        android:id="@+id/id_rating"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/id_rating3"
+        app:layout_constraintStart_toEndOf="@+id/id_server_1"
+        app:layout_constraintTop_toBottomOf="@+id/id_ratings"
+        app:srcCompat="@drawable/star_icon" />
+
+    <ImageView
+        android:id="@+id/id_rating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="67dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_of_something"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/id_textmoderate"
+        app:layout_constraintStart_toEndOf="@+id/id_rating3"
+        app:layout_constraintTop_toBottomOf="@+id/id_ratings"
+        app:srcCompat="@drawable/star_icon" />
+
+    <ImageView
+        android:id="@+id/id_rating3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/description_is_a_lot_of_typing"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/id_rating2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/id_rating"
+        app:layout_constraintTop_toBottomOf="@+id/id_ratings"
+        app:srcCompat="@drawable/star_icon" />
+
+    <TextView
+        android:id="@+id/id_textmoderate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/okay_description"
+        android:text="@string/moderate"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_diff_level" />
+
+    <ImageView
+        android:id="@+id/id_heartbeat"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/heart_beat_image"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_calories"
+        app:layout_constraintStart_toEndOf="@+id/id_time"
+        app:layout_constraintTop_toBottomOf="@+id/id_rating3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/heart_beat" />
+
+    <TextView
+        android:id="@+id/id_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/calories_in_the_recipe"
+        android:text="@string/_160_cal"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_heartbeat"
+        app:layout_constraintTop_toBottomOf="@+id/id_textmoderate"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
